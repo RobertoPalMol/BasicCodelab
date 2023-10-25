@@ -132,7 +132,7 @@ private fun MyApp(modifier: Modifier = Modifier){
 @Composable
 private fun Greetings(
     modifier: Modifier = Modifier,
-    names: List<String> = List(1000){"$it" }
+    names: List<String> = List(20){"$it" }
 ){
     LazyColumn(modifier = modifier.padding(vertical = 4.dp)) {
         items (items = names){ name ->
@@ -159,7 +159,7 @@ fun OnboardingScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        Text("Welcome to the Basics Codelab!")
+        Text("Basics Codelab de Roberto!")
         Button(
             modifier = Modifier.padding(vertical = 24.dp),
             onClick = onContinueClicked
